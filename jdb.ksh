@@ -9,7 +9,7 @@ do
 			echo Database created successfully
 			;;
 		'List Databases') echo Databases  in the current directory  are
-			ls *.db 
+			ls -d *.db
 			;;
 		'Connect To Database')
 			echo available databases are
@@ -58,7 +58,7 @@ do
 			;;
 		'Drop Database')
 			echo avialable databases are:
-			ls *.db
+			ls -d *.db
 			echo choose database to drop:
 			read drop
 			rm -r $drop
